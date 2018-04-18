@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>CHOSE YOUR STARTER</title>
+
+</head>
+<body>
+<span id='text'>CHOOSE YOUR STARTER</span>
+<div>
+1)<img src="bulbasaur.png" style="height: 50px;width: 80px"onclick="bulbasaur()">
+2)<img src="squirtle.png" style="height: 50px;width: 80px"onclick="squirtle()">
+3)<img src="charmander.png" style="height: 50px;width: 80px"onclick="charmander()">
+</div>
+<div id="bulbtext">Bulbasaur is a grass-type</div>
+<div id="squirtletext">Squirtle is a water-type</div>
+<div id="chartext">Charmander is a fire-type</div>
+
+<script>
+function bulbasaur()
+{
+
+document.getElementById('bulbtext').style.visibility="visible";
+document.getElementById('squirtletext').style.visibility="hidden";
+document.getElementById('chartext').style.visibility="hidden";
+}
+function squirtle()
+{
+
+document.getElementById('bulbtext').style.visibility="hidden";
+document.getElementById('squirtletext').style.visibility="visible";
+document.getElementById('chartext').style.visibility="hidden";
+}
+function charmander()
+{
+
+document.getElementById('bulbtext').style.visibility="hidden";
+document.getElementById('squirtletext').style.visibility="hidden";
+document.getElementById('chartext').style.visibility="visible";
+}
+</script>
+
+</body>
+</html>
